@@ -5,18 +5,22 @@
     <v-main>
       <router-view />
     </v-main>
+    
+    <CustomFooter />
   </v-app>
 </template>
 
 <script>
 import CustomHeader from './components/header/header.vue';
+import CustomFooter from './components/footer/footer.vue';
 import ApiService from "@/services/api.service";
 
 export default {
   name: 'App',
 
   components: {
-    CustomHeader
+    CustomHeader,
+    CustomFooter
   },
   created() {
     this.setInitLang();
@@ -97,7 +101,6 @@ export default {
 
 #app {
   position: relative;
-  height: 2000px;
 }
 
 /* *** RESET CODE *** */
@@ -141,7 +144,7 @@ export default {
 body,
 html {
   // BASE FONT SIZE
-  font-size: 14px !important;
+  font-size: 16px !important;
   font-family: var(--font-ar) !important;
   font-weight: 300 !important;
   letter-spacing: 0px !important;
@@ -194,5 +197,8 @@ h6 {
   font-size: 1rem;
 }
 
+p {
+  font-size: 1rem;
+}
 
 </style>

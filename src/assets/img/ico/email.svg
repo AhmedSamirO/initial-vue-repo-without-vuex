@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_232" data-name="Rectangle 232" width="22" height="22" transform="translate(1527 14.001)" fill="#fff" stroke="#3aa9c8" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="email-icon" transform="translate(-1527 -14.001)" clip-path="url(#clip-path)">
+    <g id="email" transform="translate(1527 17.438)">
+      <g id="Group_927" data-name="Group 927" transform="translate(14.583 2.788)">
+        <g id="Group_926" data-name="Group 926">
+          <path id="Path_60516" data-name="Path 60516" d="M11.932,9.981l7.417,4.689V5.094Z" transform="translate(-11.932 -5.094)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_929" data-name="Group 929" transform="translate(0 2.788)">
+        <g id="Group_928" data-name="Group 928">
+          <path id="Path_60517" data-name="Path 60517" d="M0,5.094v9.575L7.417,9.981Z" transform="translate(0 -5.094)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_931" data-name="Group 931" transform="translate(0.041)">
+        <g id="Group_930" data-name="Group 930">
+          <path id="Path_60518" data-name="Path 60518" d="M20.617,2.813H1.367A1.358,1.358,0,0,0,.034,3.983L10.993,11.2l10.959-7.22A1.358,1.358,0,0,0,20.617,2.813Z" transform="translate(-0.034 -2.813)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_933" data-name="Group 933" transform="translate(0.044 8.504)">
+        <g id="Group_932" data-name="Group 932">
+          <path id="Path_60519" data-name="Path 60519" d="M13.316,9.772,11.37,11.054a.69.69,0,0,1-.756,0L8.668,9.771.036,15.231a1.356,1.356,0,0,0,1.331,1.161h19.25a1.356,1.356,0,0,0,1.331-1.161Z" transform="translate(-0.036 -9.771)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

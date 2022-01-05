@@ -8,7 +8,7 @@
     >
       <v-container class="d-flex align-center">
         <v-img
-          alt="Vuetify Logo"
+          alt="Logo"
           class="shrink mr-2"
           contain
           :src="require(`@/assets/logo/logo.png`)"
@@ -35,7 +35,7 @@
                 :to="`/${$route.params.lang}`"
                 tag="a"
               >
-                <v-list-item-title>الرئيسية</v-list-item-title>
+                <v-list-item-title>{{$t('header.main')}}</v-list-item-title>
               </router-link>
             </v-list-item>
               
@@ -46,7 +46,7 @@
                 :to="`/${$route.params.lang}`"
                 tag="a"
               >
-                <v-list-item-title>حول مستقبل البيانات</v-list-item-title>
+                <v-list-item-title>{{$t('header.about')}}</v-list-item-title>
               </router-link>
             </v-list-item>
               
@@ -57,7 +57,7 @@
                 :to="`/${$route.params.lang}`"
                 tag="a"
               >
-                <v-list-item-title>خدماتنا</v-list-item-title>
+                <v-list-item-title>{{$t('header.services')}}</v-list-item-title>
               </router-link>
             </v-list-item>
               
@@ -68,7 +68,7 @@
                 :to="`/${$route.params.lang}`"
                 tag="a"
               >
-                <v-list-item-title>عملائنا</v-list-item-title>
+                <v-list-item-title>{{$t('header.customers')}}</v-list-item-title>
               </router-link>
             </v-list-item>
             
@@ -79,7 +79,7 @@
                 :to="`/${$route.params.lang}`"
                 tag="a"
               >
-                <v-list-item-title>تواصل معنا</v-list-item-title>
+                <v-list-item-title>{{$t('header.contact')}}</v-list-item-title>
               </router-link>
             </v-list-item>
           </v-list-item-group>
@@ -120,7 +120,7 @@
               :to="`/${$route.params.lang}`"
               tag="a"
             >
-              <v-list-item-title>الرئيسية</v-list-item-title>
+              <v-list-item-title>{{$t('header.main')}}</v-list-item-title>
             </router-link>
           </v-list-item>
             
@@ -132,7 +132,7 @@
               :to="`/about/${$route.params.lang}`"
               tag="a"
             >
-              <v-list-item-title>حول مستقبل البيانات</v-list-item-title>
+              <v-list-item-title>{{$t('header.about')}}</v-list-item-title>
             </router-link>
           </v-list-item>
             
@@ -143,7 +143,7 @@
               :to="`/services/${$route.params.lang}`"
               tag="a"
             >
-              <v-list-item-title>خدماتنا</v-list-item-title>
+              <v-list-item-title>{{$t('header.services')}}</v-list-item-title>
             </router-link>
           </v-list-item>
             
@@ -154,7 +154,7 @@
               :to="`/customers/${$route.params.lang}`"
               tag="a"
             >
-              <v-list-item-title>عملائنا</v-list-item-title>
+              <v-list-item-title>{{$t('header.customers')}}</v-list-item-title>
             </router-link>
           </v-list-item>
           
@@ -165,7 +165,7 @@
               :to="`/contact/${$route.params.lang}`"
               tag="a"
             >
-              <v-list-item-title>تواصل معنا</v-list-item-title>
+              <v-list-item-title>{{$t('header.contact')}}</v-list-item-title>
             </router-link>
           </v-list-item>
           
@@ -270,6 +270,7 @@ export default {
     text-decoration: none;
     color: var(--text-color-01) !important;
     text-align: center;
+    font-size: 0.875rem;
   }
   
   .site-app-bar--active {
