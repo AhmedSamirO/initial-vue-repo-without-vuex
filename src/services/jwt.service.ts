@@ -6,7 +6,7 @@ export const getToken = () => {
   return Cookies.get(ID_TOKEN_KEY)
 };
 
-export const saveToken = (token) => {
+export const saveToken = (token: string) => {
   // 2 weeks
   const expireDate = new Date(new Date().getTime() + (14 * 24 * 60 * 60 * 1000));
   Cookies.set(ID_TOKEN_KEY, token, { expires: expireDate })

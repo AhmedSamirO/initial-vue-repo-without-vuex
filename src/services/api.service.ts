@@ -1,3 +1,4 @@
+/* eslint-disable */
 import Vue from 'vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
@@ -21,31 +22,31 @@ const ApiService = {
     ] = `bearer ${JwtService.getToken()}`
   },
 
-  setHeaderLang (lang) {
+  setHeaderLang (lang: string) {
     Vue.axios.defaults.headers.common["lang"] = lang
   },
 
-  query (resource, params) {
+  query (resource: any, params: any) {
     return Vue.axios.get(resource, { params: params })
   },
 
-  get (resource) {
+  get (resource: any) {
     return Vue.axios.get(`${resource}`)
   },
 
-  post (resource, params) {
+  post (resource: any, params: any) {
     return Vue.axios.post(`${resource}`, params)
   },
 
-  update (resource, slug, params) {
+  update (resource: any, slug: any, params: any) {
     return Vue.axios.put(`${resource}/${slug}`, params)
   },
 
-  put (resource, params) {
+  put (resource: any, params: any) {
     return Vue.axios.put(`${resource}`, params)
   },
 
-  delete (resource) {
+  delete (resource: any) {
     return Vue.axios.delete(resource).catch(error => {
       throw new Error(`[RWV] ApiService ${error}`)
     })

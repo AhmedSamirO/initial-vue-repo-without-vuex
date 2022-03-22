@@ -1,4 +1,4 @@
-# data_future
+# vue2-template
 
 ## Project setup
 ```

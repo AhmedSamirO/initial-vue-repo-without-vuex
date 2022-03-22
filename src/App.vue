@@ -133,11 +133,14 @@ export default {
   --gradient-color-start: #244821;
   --gradient-color-end: #56912e;
 
+  --footer-background-color: #1a1718;
+  
   --error-font: #e83a3a;
   --error-border: #e83a3a;
   --error-background: #e83a3a26;
 
   --font-ar: 'Montserrat-Arabic', sans-serif;
+  
 }
 
 .v-application,

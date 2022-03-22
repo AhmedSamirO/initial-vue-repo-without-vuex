@@ -43,7 +43,7 @@
               :class="[{'site-app-bar--active': $route.name == 'about'}]"
             >
               <router-link
-                :to="`/${$route.params.lang}`"
+                :to="`/about/${$route.params.lang}`"
                 tag="a"
               >
                 <v-list-item-title>{{$t('header.about')}}</v-list-item-title>
@@ -54,7 +54,7 @@
               :class="[{'site-app-bar--active': $route.name == 'services'}]"
             >
               <router-link
-                :to="`/${$route.params.lang}`"
+                :to="`/services/${$route.params.lang}`"
                 tag="a"
               >
                 <v-list-item-title>{{$t('header.services')}}</v-list-item-title>
@@ -65,7 +65,7 @@
               :class="[{'site-app-bar--active': $route.name == 'customers'}]"
             >
               <router-link
-                :to="`/${$route.params.lang}`"
+                :to="`/customers/${$route.params.lang}`"
                 tag="a"
               >
                 <v-list-item-title>{{$t('header.customers')}}</v-list-item-title>
@@ -76,7 +76,7 @@
               :class="[{'site-app-bar--active': $route.name == 'contact'}]"
             >
               <router-link
-                :to="`/${$route.params.lang}`"
+                :to="`/contact/${$route.params.lang}`"
                 tag="a"
               >
                 <v-list-item-title>{{$t('header.contact')}}</v-list-item-title>
@@ -252,6 +252,7 @@ export default {
     
     .v-list-item {
       justify-content: center;
+      height: 40px;
       
       .v-list-item__title {
         font-weight: bold !important;
@@ -271,6 +272,7 @@ export default {
     color: var(--text-color-01) !important;
     text-align: center;
     font-size: 0.875rem;
+    
   }
   
   .site-app-bar--active {
