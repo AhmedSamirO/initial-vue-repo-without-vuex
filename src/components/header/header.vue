@@ -87,34 +87,33 @@
       
         <v-spacer></v-spacer>
 
-        <v-btn v-if="$vuetify.breakpoint.lgAndUp" @click="changeLanguage" text>
+        <v-btn @click="changeLanguage" text>
           {{$i18n.locale == 'ar' ? 'en' : 'ar'}}
-        </v-btn>
-        
-        <v-btn icon v-if="$vuetify.breakpoint.lgAndUp">
-          <v-icon>mdi-magnify</v-icon>
         </v-btn>
         
         <v-app-bar-nav-icon 
           v-if="$vuetify.breakpoint.mdAndDown" 
-          @click="drawer = !drawer" 
+          @click.stop="drawer = !drawer" 
         />
         
       </v-container>
     </v-app-bar>
-    <div class="small-menu" v-if="$vuetify.breakpoint.mdAndDown && drawer">
+    
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+    >
       <v-list
         nav
         dense
       >
         <v-list-item-group
           v-model="group"
-          active-class="site-app-bar--active"
-          :class="[$vuetify.breakpoint.lgAndUp ? 'd-flex' : '']"
+          active-class="deep-purple--text text--accent-4"
         >
           <v-list-item
             :class="[{'site-app-bar--active': $route.name == 'home'}]"
-            @click.stop
           >
             <router-link
               :to="`/${$route.params.lang}`"
@@ -126,7 +125,6 @@
             
           <v-list-item
             :class="[{'site-app-bar--active': $route.name == 'about'}]"
-            @click.stop
           >
             <router-link
               :to="`/about/${$route.params.lang}`"
@@ -169,22 +167,10 @@
             </router-link>
           </v-list-item>
           
-          <v-list-item class="justify-center">
-            <v-btn icon>
-              <v-icon>mdi-magnify</v-icon>
-            </v-btn>
-          </v-list-item>
-        
-          <v-btn
-            @click="changeLanguage"
-            text
-          >
-            {{$i18n.locale == 'ar' ? 'en' : 'ar'}}
-          </v-btn>
-        
         </v-list-item-group>
       </v-list>
-    </div>
+    </v-navigation-drawer>
+
   </span>
 </template>
 
