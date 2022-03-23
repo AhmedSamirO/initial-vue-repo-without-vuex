@@ -17,18 +17,33 @@ const routes: Array<RouteConfig> = [
     component: AboutView
   },
   {
-    path: '/services/:lang?',
-    name: 'services',
+    path: '/experimental/:lang?',
+    name: 'experimental',
     component: AboutView
   },
   {
-    path: '/customers/:lang?',
-    name: 'customers',
+    path: '/faq/:lang?',
+    name: 'faq',
     component: AboutView
   },
   {
     path: '/contact/:lang?',
     name: 'contact',
+    component: AboutView
+  },
+  {
+    path: '/contact/:lang?',
+    name: 'contact',
+    component: AboutView
+  },
+  {
+    path: '/terms/:lang?',
+    name: 'terms',
+    component: AboutView
+  },
+  {
+    path: '/policy/:lang?',
+    name: 'policy',
     component: AboutView
   },
   //{

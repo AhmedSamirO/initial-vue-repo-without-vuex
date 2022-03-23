@@ -7,22 +7,27 @@ export default {
   },
   header: {
     main: 'Home',
-    about: 'About the future of data',
-    services: 'Our services',
-    customers: 'Our customers',
+    about: 'About us',
+    experimental: 'Experimental',
+    faq: 'FAQs',
     contact: 'Contact us'
   },
   footer: {
-    underIconText: 'Specialized Data Future Company for Information Systems Technology (DF .KSA) We are a certified and licensed Saudi company based in the Kingdom of Saudi Arabia',
-    fastLinks: 'Quick links',
-    about: 'About the future of data',
-    services: 'Our services',
-    customers: 'Our customers',
+    underIconText: 'This text is an example of a text that can be replaced in the same space. This text was generated from the Arabic text generator',
+    importantLinks: 'Important links',
+    about: 'About us',
+    experimental: 'Experimental',
+    faq: 'FAQs',
     contact: 'Contact us',
+    AE: 'UAE',
+    Qatar: 'Qatar',
+    Oman: 'Oman',
+    Jordan: 'Jordan',
+    Egypt: 'Egypt',
     privacyPolicy: 'Privacy policy',
     termsAndConditions: 'Terms and Conditions',
     contactInfo: 'Contact info',
-    copyRights: '© - All Rights Reserved 2021'
+    copyRights: 'All rights reserved, Pedaia, 2022'
   }
 
 }

@@ -70,33 +70,14 @@ export default {
 <style lang="scss">
 
 @font-face {
-  font-family: Montserrat-Arabic;
-  src: url('./assets/fonts/Montserrat-Arabic-Light.ttf');
+  font-family: Droid-Kufi;
+  src: url('./assets/fonts/DroidKufiRegular.ttf');
   font-weight: 300;
 }
 @font-face {
-  font-family: Montserrat-Arabic;
-  src: url('./assets/fonts/Montserrat-Arabic-Medium.ttf');
+  font-family: Droid-Kufi;
+  src: url('./assets/fonts/DroidKufiBold.ttf');
   font-weight: 400;
-}
-@font-face {
-  font-family: Montserrat-Arabic;
-  src: url('./assets/fonts/Montserrat-Arabic-SemiBold.ttf');
-  font-weight: 600;
-}
-@font-face {
-  font-family: Montserrat-Arabic;
-  src: url('./assets/fonts/Montserrat-Arabic-Regular.ttf');
-}
-@font-face {
-  font-family: Montserrat-Arabic;
-  src: url('./assets/fonts/Montserrat-Arabic-Bold.ttf');
-  font-weight: bold;
-}
-@font-face {
-  font-family: Montserrat-Arabic;
-  src: url('./assets/fonts/Montserrat-Arabic-ExtraBold.ttf');
-  font-weight: 800;
 }
 
 #app {
@@ -114,15 +95,15 @@ export default {
 }
 
 :root {
-  --basic-color-01: #548e2d;
-  --primary: #548E2D;
-  --secondary: #2D5C29;
+  --basic-color-01: #0871B7;
+  --primary: #0871B7;
+  --secondary: #00A49B;
   --white: #ffffff;
 
   --input-field-border: #dedede;
   --input-field-color: #f1f1f1;
 
-  --text-color-01: #0e100e;
+  --text-color-01: #202020;
   --text-color-02: #5d5a5a;
   --text-color-03: #548e2d29;
 
@@ -130,16 +111,14 @@ export default {
 
   --shadow-color-01: #0000001a;
 
-  --gradient-color-start: #244821;
-  --gradient-color-end: #56912e;
-
-  --footer-background-color: #1a1718;
+  --gradient-color-start: #00A49B;
+  --gradient-color-end: #0871B7;
   
   --error-font: #e83a3a;
   --error-border: #e83a3a;
   --error-background: #e83a3a26;
 
-  --font-ar: 'Montserrat-Arabic', sans-serif;
+  --font-ar: 'Droid-Kufi', sans-serif;
   
 }
 

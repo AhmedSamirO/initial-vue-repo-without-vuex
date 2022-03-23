@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
-    <v-container>
-      <div class="footer--top">
+    <v-container class="pb-0">
+      <div class="footer__top">
         <div class="row justify-center text-start">
           <div class="col-md-3">
             <div class="logo">
@@ -9,8 +9,8 @@
                 class="m-2"
                 :src="require(`@/assets/logo/logo-white.png`)"
                 alt="data future"
-                width="69.41px"
-                height="89.61px"
+                width="85px"
+                height="80px"
               />
             </div>
             
@@ -18,90 +18,126 @@
           </div>
           
           <div class="col-md-3 p-2 footer__links">
-            <h5 class="footer__list_header">{{$t('footer.fastLinks')}}</h5>
+            <h4 class="footer__list_header">{{$t('footer.importantLinks')}}</h4>
+            <router-link
+              :to="`/${$route.params.lang}`"
+              tag="a"
+            >
+              <p>{{$t('footer.main')}}</p>
+            </router-link>
             
-            <p>{{$t('footer.about')}}</p>
-              
-            <p>{{$t('footer.services')}}</p>
+            <router-link
+              :to="`/about/${$route.params.lang}`"
+              tag="a"
+            >
+              <p>{{$t('footer.about')}}</p>
+            </router-link>
+            
+            <router-link
+              :to="`/experimental/${$route.params.lang}`"
+              tag="a"
+            >
+              <p>{{$t('footer.experimental')}}</p>
+            </router-link>
+            
+            <router-link
+              :to="`/faq/${$route.params.lang}`"
+              tag="a"
+            >
+              <p>{{$t('footer.faq')}}</p>
+            </router-link>
+            
+            <router-link
+              :to="`/contact/${$route.params.lang}`"
+              tag="a"
+            >
+              <p>{{$t('footer.contact')}}</p>
+            </router-link>
+          </div>
           
-            <p>{{$t('footer.customers')}}</p>
-          
-            <p>{{$t('footer.contact')}}</p>
+          <div class="col-md-3 p-2 footer__contact-info">
+            <h4 class="footer__list_header">{{$t('footer.contactInfo')}}</h4>
+            
+            <div class="footer__companyInfo d-flex">
+              <p class="px-3">
+                {{$t('footer.AE')}}: 
+                <span dir="ltr">+971585958669</span>
+              </p>
+            </div>
+            
+            <div class="footer__companyInfo d-flex">
+              <p class="px-3">
+                {{$t('footer.Qatar')}}: 
+                <span dir="ltr">+97455726002</span>
+              </p>
+            </div>
+            
+            <div class="footer__companyInfo d-flex">
+              <p class="px-3">
+                {{$t('footer.Oman')}}: 
+                <span dir="ltr">+96898148199</span>
+              </p>
+            </div>
+            
+            <div class="footer__companyInfo d-flex">
+              <p class="px-3">
+                {{$t('footer.Jordan')}}: 
+                <span dir="ltr">+962776806706</span>
+              </p>
+            </div>
+            
+            <div class="footer__companyInfo d-flex">
+              <p class="px-3">
+                {{$t('footer.Egypt')}}: 
+                <span dir="ltr">+201016988757</span>
+              </p>
+            </div>
           </div>
           
           <div class="col-md-3 p-2 footer__links">
-            <h5 class="footer__list_header">{{$t('footer.fastLinks')}}</h5>
+            <h4 class="footer__list_header">{{$t('footer.contactInfo')}}</h4>
             
-            <p>{{$t('footer.privacyPolicy')}}</p>
-              
-            <p>{{$t('footer.termsAndConditions')}}</p>
-          </div>
-          
-          <div class="col-md-3 p-2 footer__links">
-            <h5 class="footer__list_header">{{$t('footer.contactInfo')}}</h5>
+            <p class="px-3 footer__companyTitle">
+              {{$t('shared.companyLocationTitle')}}
+            </p>
             
-            <div class="footer__companyInfo d-flex">
-              <img
-                :src="require(`@/assets/img/ico/location.svg`)"
-                alt="icon"
-                width="16"
-                height="23"
-              />
-              <p class="px-3">{{$t('shared.companyLocationTitle')}}</p>
-            </div>
-            
-            <div class="footer__companyInfo d-flex">
-              <img
-                :src="require(`@/assets/img/ico/email.svg`)"
-                alt="icon"
-                width="22"
-                height="22"
-              />
-              <p class="px-3">{{$t('shared.companyEmail')}}</p>
-            </div>
-            
-            <div class="footer__companyInfo d-flex">
-              <img
-                :src="require(`@/assets/img/ico/phone.svg`)"
-                alt="icon"
-                width="22"
-                height="22"
-              />
-              <p class="px-3">{{$t('shared.companyPhone')}}</p>
-            </div>
-            
+            <p class="px-3 footer__companyEmail">
+              {{$t('shared.companyEmail')}}
+            </p>
+
             <div class="d-flex footer__social">
               <img
-                :src="require(`@/assets/img/ico/twitter.svg`)"
+                :src="require(`@/assets/img/ico/facebook.svg`)"
                 alt="Twitter"
-                width="32"
-                height="32"
+                width="40"
+                height="40"
                 @click="openTwitter"
               />
               
               <img
-                :src="require(`@/assets/img/ico/youtube.svg`)"
+                :src="require(`@/assets/img/ico/twitter.svg`)"
+                alt="Twitter"
+                width="40"
+                height="40"
+                @click="openTwitter"
+              />
+              
+              <img
+                :src="require(`@/assets/img/ico/instgram.svg`)"
                 alt="Youtube"
-                width="32"
-                height="32"
+                width="40"
+                height="40"
                 @click="openYoutube"
               />
               
               <img
                 :src="require(`@/assets/img/ico/linkedin.svg`)"
                 alt="Linkedin"
-                width="32"
-                height="32"
+                width="40"
+                height="40"
                 @click="openLinkedin"
               />
               
-              <img
-                :src="require(`@/assets/img/ico/snapChat.svg`)"
-                alt="SnapChat"
-                width="32"
-                height="32"
-                @click="openSnapChat"
-              />
             </div>
           </div>
         </div>
@@ -109,13 +145,28 @@
         <hr />
       </div>
 
-      <div class="footer__bottom d-flex justify-center mb-3 mt-5">
-        <p class="mb-0 text-center">
-          <span class="companyName">
-          {{$t('shared.companyName')}}
-          </span>
+      <div class="footer__bottom d-flex justify-space-between my-5">
+        <p class="mb-0">
           {{$t('footer.copyRights')}}
         </p>
+        <div class="d-flex">
+          <router-link
+            :to="`/terms/${$route.params.lang}`"
+            tag="a"
+          >
+            <p class="mb-0 mx-5">
+              {{$t('footer.termsAndConditions')}}
+            </p>
+          </router-link>
+          <router-link
+            :to="`/policy/${$route.params.lang}`"
+            tag="a"
+          >
+            <p class="mb-0">
+              {{$t('footer.privacyPolicy')}}
+            </p>
+          </router-link>
+        </div>
       </div>
     </v-container>
   </div>
@@ -146,43 +197,71 @@ export default {
 
 <style scoped lang="scss">
   .footer {
-    background-color: var(--footer-background-color);
+    background: linear-gradient(
+      269.6deg, 
+      var(--gradient-color-start) 0.3%, 
+      var(--gradient-color-end) 99.62%
+    );
     color: var(--white);
-    padding-top: 72px;
+    padding-top: 80px;
     
     .footer__list_header {
-      font-weight: 400;
-      margin-bottom: 25px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
     }
     
     .underIconText {
-      line-height: 30px;
-      margin-top: 24px;
+      line-height: 32px;
+      margin-top: 20px;
+      max-width: 300px;
     }
     
-    .footer__companyInfo {
+    &__links {
+      p {
+        line-height: 36px;
+      }
+    }
+    
+    &__contact-info{
+      p {
+        line-height: 29px;
+      }
+    }
+    
+    &__companyTitle {
+      line-height: 36px;
+      margin-bottom: 10px;
+    }
+    
+    &__companyEmail {
+      margin-bottom: 50px;
+    }
+    
+    &__companyInfo {
       p {
         margin-bottom: 24px;
       }
     }
     
-    .footer__social {
-      margin-top: 18px;
+    &__social {
+      margin-top: 30px;
       
       img {
         margin-left: 8px;
         margin-right: 8px;
+        cursor: pointer;
       }
     }
     
-    .footer__bottom {
-      p {
-        font-size: 0.75rem;
-        
-        .companyName {
-          font-size: 1rem;
-        }
-      }
+    hr {
+      margin-top: 70px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: var(--white) !important;
     }
   }
   

@@ -1,28 +1,34 @@
 export default {
   shared: {
-    companyLocationTitle: 'وادي مكة _مكة المكرمة',
-    companyEmail: 'finalyyyy319@gmail.com',
+    companyLocationTitle: 'مركز الأعمال, مدينة الشارقة للنشر, المنطقة الحرة, الشارقة',
+    companyEmail: 'info@pedaia.com',
     companyPhone: '00966562501000',
     companyName: 'مستقبل البيانات'
   },
   header: {
     main: 'الرئيسية',
-    about: 'حول مستقبل البيانات',
-    services: 'خدماتنا',
-    customers: 'عملائنا',
+    about: 'من نحن',
+    experimental: 'تجريبى',
+    faq: 'الأسئلة الشائعة',
     contact: 'تواصل معنا'
   },
   footer: {
     underIconText: 'شركة مستقبل البيانات المتخصصة لتقنية نظم المعلومات (DF .KSA) نحن شركة سعودية معتمدة ومرخصة مقرها المملكة العربية السعودية',
-    fastLinks: 'روابط سريعة',
-    about: 'حول مستقبل البيانات',
-    services: 'خدماتنا',
-    customers: 'عملائنا',
+    importantLinks: 'روابط مهمة',
+    main: 'الرئيسية',
+    about: 'من نحن',
+    experimental: 'تجريبى',
+    faq: 'الأسئلة الشائعة',
     contact: 'تواصل معنا',
+    AE: 'الامارات العربية المتحدة',
+    Qatar: 'قطر',
+    Oman: 'عُمان',
+    Jordan: 'الأردن',
+    Egypt: 'مصر',
     privacyPolicy: 'سياسة الخصوصية',
-    termsAndConditions: 'شروط و أحكام',
+    termsAndConditions: 'الأحكام والشروط',
     contactInfo: 'معلومات التواصل',
-    copyRights: '© - جميع الحقوق محفوظة 2021'
+    copyRights: 'جميع الحقوق محفوظة، بداية، 2022'
   }
 
 }

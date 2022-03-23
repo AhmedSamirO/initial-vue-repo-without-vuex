@@ -4,7 +4,7 @@
       app
       color="white"
       class="site-app-bar"
-      height="104px"
+      height="120px"
     >
       <v-container class="d-flex align-center">
         <v-img
@@ -12,8 +12,8 @@
           class="shrink mr-2"
           contain
           :src="require(`@/assets/logo/logo.png`)"
-          width="58px"
-          height="73px"
+          width="85px"
+          height="80px"
         />
 
         <v-spacer></v-spacer>
@@ -51,24 +51,26 @@
             </v-list-item>
               
             <v-list-item
-              :class="[{'site-app-bar--active': $route.name == 'services'}]"
+              :class="[{'site-app-bar--active': $route.name == 'experimental'}]"
             >
               <router-link
-                :to="`/services/${$route.params.lang}`"
+                :to="`/experimental/${$route.params.lang}`"
                 tag="a"
               >
-                <v-list-item-title>{{$t('header.services')}}</v-list-item-title>
+                <v-list-item-title>
+                  {{$t('header.experimental')}}
+                </v-list-item-title>
               </router-link>
             </v-list-item>
               
             <v-list-item
-              :class="[{'site-app-bar--active': $route.name == 'customers'}]"
+              :class="[{'site-app-bar--active': $route.name == 'faq'}]"
             >
               <router-link
-                :to="`/customers/${$route.params.lang}`"
+                :to="`/faq/${$route.params.lang}`"
                 tag="a"
               >
-                <v-list-item-title>{{$t('header.customers')}}</v-list-item-title>
+                <v-list-item-title>{{$t('header.faq')}}</v-list-item-title>
               </router-link>
             </v-list-item>
             
@@ -135,24 +137,26 @@
           </v-list-item>
             
           <v-list-item
-            :class="[{'site-app-bar--active': $route.name == 'services'}]"
+            :class="[{'site-app-bar--active': $route.name == 'experimental'}]"
           >
             <router-link
-              :to="`/services/${$route.params.lang}`"
+              :to="`/experimental/${$route.params.lang}`"
               tag="a"
             >
-              <v-list-item-title>{{$t('header.services')}}</v-list-item-title>
+              <v-list-item-title>
+                {{$t('header.experimental')}}
+              </v-list-item-title>
             </router-link>
           </v-list-item>
             
           <v-list-item
-            :class="[{'site-app-bar--active': $route.name == 'customers'}]"
+            :class="[{'site-app-bar--active': $route.name == 'faq'}]"
           >
             <router-link
-              :to="`/customers/${$route.params.lang}`"
+              :to="`/faq/${$route.params.lang}`"
               tag="a"
             >
-              <v-list-item-title>{{$t('header.customers')}}</v-list-item-title>
+              <v-list-item-title>{{$t('header.faq')}}</v-list-item-title>
             </router-link>
           </v-list-item>
           
@@ -239,9 +243,13 @@ export default {
     .v-list-item {
       justify-content: center;
       height: 40px;
+      padding: 18px;
+      margin-top: 4px;
       
       .v-list-item__title {
-        font-weight: bold !important;
+        font-weight: 700 !important;
+        font-size: 1rem;
+        line-height: 1.5rem;
       }    
     }
     
@@ -257,8 +265,6 @@ export default {
     text-decoration: none;
     color: var(--text-color-01) !important;
     text-align: center;
-    font-size: 0.875rem;
-    
   }
   
   .site-app-bar--active {
